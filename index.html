@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Website Tutorial</title>
+	<meta  charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	.navbar{
+		margin-bottom: :0;
+		border-radius: 0;
+		background-color: #F39C12;
+		color: #FFF;
+		padding: 1% 0;
+		font-size: 1.2em;
+		border: :0;
+	}	
+	.navbar-brand{
+		float: left;
+		min-height: 55px;
+		padding: 0 15px 5px;
+	}
+	.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, 
+	.navbar-inverse .navbar-nav .active a:hover{
+		color: #FFF;
+		background-color: #F39C12;
+	}
+	.navbar-inverse .navbar-nav li a{
+		color: #D5D5D5;
+	}
+	.carousel-caption{
+		top: 50%;
+		transform: translateY(-50%);
+		text-transform: uppercase;
+	}
+	.btn{
+		font-size: 18px;
+		color: #FFF;
+		padding: 12px 22px;
+		background:#F39C12;
+		border:2px solid #FFF;
+	}
+	.container{
+		margin: 4% auto;
+	}
+	#icon{
+		max-width: 200px;
+		margin:1% auto;
+	}
+	footer{
+		width: 100%;
+		background-color: #F39C12;
+		padding: 3%;
+		color: #FFF;
+	}
+	.fa
+	{
+		padding: 20px;
+		font-size: 30px;
+		color: #FFF;
+	}
+	.fa:hover{
+		color: :D5D5D5;
+		text-decoration: none;
+	}
+	@media (max-width: 900px){
+		.fa {
+			font-size: 20px;
+			padding: 10px;
+		}
+	}
+	@media (max-width: 600px){
+		.carousel-caption{
+			display: none; 
+		}
+		#icon{
+			max-width: 150px;
+		}
+		h4{
+			font-size: 1.9em;
+		}
+	}
+	</style>
+	
+	
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/logo1.png" height="30" width="80"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				
+			</div>
+			
+		</div>
+		
+	</nav>
+	<div id="myCarousel" class="carousel slider" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="img/acharya1.jpg">
+				<div class="carousel-caption">
+					<h1>GET TO KNOW BOOTSTRAP</h1>
+					<br>
+					<button type="button" class="btn btn-default">Get Started</button>
+				</div>
+		</div><!--END ACTIVE-->
+		<div class="item">
+			<img src="img/bc3.jpg">
+		</div>
+		<div class="item">
+			<img src="img/ag2.jpg">
+		</div>
+	</div>
+	<!--Start slider control-->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div><!--end of slider control-->
+<div class="container text-center">
+	<h2>Logos</h2>
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="img/ag.jpg" id="icon">
+			<h4>Assembly Of Church School</h4>
+		</div>
+		<div class="col-sm-4">
+			<img src="img/bc.jpg" id="icon">
+			<h4>Dr Bc Roy Engineering College</h4>
+		</div>
+		<div class="col-sm-4">
+			<img src="img/acharya.jpg" id="icon">
+			<h4>Acharya Institute Of Technology</h4>
+		</div>
+	</div>	
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h4>About the college</h4>
+			<p>Acharya Institute of Technology, or AIT, is a private co-educational engineering and management college in Bengaluru, India, affiliated with the Visvesvaraya Technological University (VTU) and accredited by the National Board of Accreditation (NBA). Established in 2000, it offers eleven undergraduate courses and eight postgraduate courses.[9] The college has links and collaborations with various industries and universities across the world.[10] It is one of the several institutes run by the JMJ Education Society</p>
+			<p>The Acharya Institute of Technology (AIT) was established in 2000 by Premnath Reddy, Chairman of the Acharya Group of Institutions.[4] The college is managed by the JMJ Education Society, Headquartered in Bengaluru.[15] AIT offers Thirteen Bachelor of Engineering (BE) courses, Six Master of Technology (M.Tech) courses, Master of Business Administration (MBA), Master of Computer Applications (MCA) and a PhD course in Mathematics. All courses are affiliated to the Visvesvaraya Technological University (VTU).[9] It was the first college under the VTU to start an undergraduate course in Mechatronics in Karnataka.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="img/a1.jpg" class="img-responsive">
+		</div>
+	</div>
+	
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<h4>About the Acharya college</h4>
+			<p>Acharya Institute of Technology, or AIT, is a private co-educational engineering and management college in Bengaluru, India, affiliated with the Visvesvaraya Technological University (VTU) and accredited by the National Board of Accreditation (NBA). Established in 2000, it offers eleven undergraduate courses and eight postgraduate courses.</p>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="img/acharya2.jpg" class="img-responsive">
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<h4>About the Bc roy Engineering college</h4>
+			<p>Dr. B. C. Roy Engineering College (BCREC) is a private engineering college in Durgapur named after legendary physician Dr. Bidhan Chandra Roy, located in Paschim Bardhaman district, West Bengal, about 200 kilometers from the city of Kolkata, India. It was established on 21 August 2000 with its first batch of students. It offers undergraduate and postgraduate courses in Engineering, Technology and Management. The college is affiliated under All India Council for Technical Education and Maulana Abul Kalam Azad University of Technology formerly known as West Bengal University of Technology (WBUT).</p>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="img/bc1.jpg" class="img-responsive">
+		</div>
+	</div>
+	
+</div>
+<div class="container">
+	<div class="row">
+
+			<h4><a href="#hidden" data-toggle="collapse">Click here to know more</a></h4>
+			<div id="hidden" class="collapse">
+			<p>Acharya Institute of Technology, or AIT, is a private co-educational engineering and management college in Bengaluru, India, affiliated with the Visvesvaraya Technological University (VTU) and accredited by the National Board of Accreditation (NBA). Established in 2000, it offers eleven undergraduate courses and eight postgraduate courses.[9] The college has links and collaborations with various industries and universities across the world.[10] It is one of the several institutes run by the JMJ Education Society</p>
+			<p>The Acharya Institute of Technology (AIT) was established in 2000 by Premnath Reddy, Chairman of the Acharya Group of Institutions.[4] The college is managed by the JMJ Education Society, Headquartered in Bengaluru.[15] AIT offers Thirteen Bachelor of Engineering (BE) courses, Six Master of Technology (M.Tech) courses, Master of Business Administration (MBA), Master of Computer Applications (MCA) and a PhD course in Mathematics. All courses are affiliated to the Visvesvaraya Technological University (VTU).[9] It was the first college under the VTU to start an undergraduate course in Mechatronics in Karnataka.</p>
+		</div>
+	</div>
+</div>
+<footer class="container-fluid text-center">
+	<div class="row">
+		<div class="col-sm-4">
+			<h3>Contact Us</h3>
+			<br>
+			<h4>Our Contact Info Here.</h4>	
+		</div>
+		<div class="col-sm-4">
+			<h3>Connect</h3>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+	</div>
+	<div class="col-sm-4">
+		<img src="img/ap.jpg" class="icon">
+	</div>
+</div>
+</footer>
+</body>
+</html>
